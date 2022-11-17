@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{text-decoration: none;}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0 ,.5),rgba(0,0,0, .5)), url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.top{
+    width: 100%;
+    height: 90px;
+    background: #700be4cc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+.logo_area{
+    width: 20%;
+}
+.logo_area a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_area a img{
+    width: 60px;
+}
+.logo_area a h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: cursive;
+    margin-left: 15px;
+}
+.menu_area{
+    width: 42%;
+}
+.menu_area ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_area ul li{
+    position: relative;
+}
+.menu_area ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #00ffff;
+    bottom: -10px;
+    left: 0;
+    transition: .5s all ease-in-out;
+}
+.menu_area ul li:hover::after{
+    width: 100%;
+}
+.menu_area ul li a{
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s all ease-in-out;
+}
+.menu_area ul li a:hover{
+    color: #00ffff;
+}
+.info{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info h1{
+    color: #fff;
+    font-family: lato;
+    font-size: 60px;
+}
+.info p{
+    color: #fff;
+    font-size: 20px;
+    font-family: arial;
+    margin: 30px 0px;
+}
+.btn button{
+    padding: 15px 45px;
+    background: transparent;
+    border: 2px solid aqua;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn button::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #700be4cc;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .5s all ease-in-out;
+}
+.btn button:hover::after{
+    width: 100%;
+}
+
+/* section welcome */
+
+.welcome-area h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: #6916C4;
+}
+.welcome-area p{
+    
+    text-align: center;
+    font-size: 15px;
+}
+.welcome-photo img{
+    margin: 20px 20px 10px 350px;
+}
+.container-middle{
+    background-color: #F5F5F5;
+    margin-top: -20px;
+    padding: 90px;
+    
+}
+.course{
+    font-size: 30px;
+    color: #6916C4;
+    
+}
+.course h2{
+    display: inline;
+    margin-left: 17px;
+}
+.course-details{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.img-section{
+    
+    margin: 10px 20px 20px 20px;
+}
+.img-section img{
+    width: 100%;
+}
+
+.title{
+    margin-top: 0px;
+    height: 180px;
+    background-color: #eaeded;
+}
+.title h2,p{
+    margin-left: 20px;
+}
+.button-click{
+    background-color: #6916C4;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: none;
+    width: 90px;
+}
+.button-click a{
+    text-decoration: none;
+    color: #fff;
+}
